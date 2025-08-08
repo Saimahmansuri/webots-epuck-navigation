@@ -6,7 +6,7 @@ This system implements a **leader-follower** navigation architecture where:
 - **Leader Robot**: Uses GPS, compass, and distance sensors for intelligent navigation with waypoint system
 - **Blind Robot**: Follows leader's commands without using its own navigation sensors
 
-## 🤖 System Architecture
+## System Architecture
 
 ```
 Leader Robot                    Blind Robot
@@ -17,7 +17,7 @@ Leader Robot                    Blind Robot
            (JSON file)
 ```
 
-## 📁 File Structure
+## File Structure
 
 ```
 controllers/
@@ -28,7 +28,7 @@ controllers/
 └── robot_communication.json # Shared communication file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Setup in Webots
 
@@ -55,7 +55,7 @@ DESTINATION = 1  # 1 = Kitchen, 2 = Living Room
 2. **Start Blind Robot**: Add to simulation or reset if already present
 3. **Watch**: Leader navigates and blind robot follows
 
-## 📡 Communication Protocol
+## Communication Protocol
 
 The robots communicate via `robot_communication.json`:
 
@@ -83,7 +83,7 @@ The robots communicate via `robot_communication.json`:
 | `stop` | Stop movement | Both motors stop |
 | `reached` | Destination reached | Stop and enter reached state |
 
-## 🗺️ Navigation Flow
+## Navigation Flow
 
 ### Kitchen Navigation (DESTINATION = 1)
 ```
@@ -95,28 +95,28 @@ Start → Waypoint (-2.6, -5.9, 0) → Fridge (-0.52, -0.5, 0)
 Start → Waypoint (-4.517, -6.0805, 0) → Sofa (-7.0533, -0.8042, 0)
 ```
 
-## 📊 Console Output Examples
+## Console Output Examples
 
 ### Leader Robot Output:
 ```
-🗺️ Kitchen navigation started!
+ Kitchen navigation started!
   Waypoint: (-2.600, -5.900, 0.000)
   Final destination: (-0.520, -0.500, 0.000)
-📡 Sending to blind robot: forward (speed: 0.90)
-[🗺️ Stage 1: To Waypoint] Position: (-1.234, -2.567), Distance: 2.135
-📡 Sending to blind robot: turn_left (speed: 0.60)
-✅ Waypoint confirmed reached! Distance: 0.620
-📡 Sending to blind robot: reached (speed: 0.00)
+ Sending to blind robot: forward (speed: 0.90)
+[ Stage 1: To Waypoint] Position: (-1.234, -2.567), Distance: 2.135
+ Sending to blind robot: turn_left (speed: 0.60)
+ Waypoint confirmed reached! Distance: 0.620
+ Sending to blind robot: reached (speed: 0.00)
 ```
 
 ### Blind Robot Output:
 ```
-👁️‍🗨️ Blind robot: ➡️ Moving forward (speed: 0.90) | Leader: TO_WAYPOINT
-👁️‍🗨️ Blind robot: ⬅️ Turning left (speed: 0.60) | Leader: TO_WAYPOINT
-👁️‍🗨️ Blind robot: 🎯 Destination reached! | Leader: REACHED
+ Blind robot:  Moving forward (speed: 0.90) | Leader: TO_WAYPOINT
+ Blind robot:  Turning left (speed: 0.60) | Leader: TO_WAYPOINT
+ Blind robot:  Destination reached! | Leader: REACHED
 ```
 
-## ⚙️ Configuration Options
+##  Configuration Options
 
 ### Leader Robot Settings (leader_robot.py):
 ```python
@@ -131,7 +131,7 @@ MAX_SPEED = 6.28               # Maximum motor speed
 command_timeout = 2.0          # Stop if no command for X seconds
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues:
 
@@ -160,7 +160,7 @@ cat robot_communication.json
 watch -n 0.1 cat robot_communication.json
 ```
 
-## 🎯 Advanced Features
+## Advanced Features
 
 ### Custom Command Extensions:
 Add new commands by modifying both controllers:
@@ -181,7 +181,7 @@ elif command == "slow_forward":
     status = f"🐌 Moving slowly forward (speed: {speed_modifier:.2f})"
 ```
 
-## 📈 Performance Tips
+## Performance Tips
 
 1. **Reduce communication frequency** for better performance
 2. **Increase command timeout** for slower systems
@@ -191,7 +191,7 @@ elif command == "slow_forward":
 ---
 
 
-## 🧠 Author
+## Author
 
 **Saimah Mansuri**  
 MSc Artificial Intelligence, Sheffield Hallam University  
