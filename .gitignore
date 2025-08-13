@@ -1,0 +1,9 @@
+# .gitignore
+*.wbo~
+*.bak
+*.tmp
+*.old
+*.log
+webots.cache/
+robot_communication.json
+*.mp4
