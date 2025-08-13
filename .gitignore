@@ -6,3 +6,4 @@
 *.log
 webots.cache/
 robot_communication.json
+*.mp4
