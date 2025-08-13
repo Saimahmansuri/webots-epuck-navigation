@@ -6,4 +6,4 @@
 *.log
 webots.cache/
 robot_communication.json
-*.mp4
+*.mp4"media/apartment.mp4" 
