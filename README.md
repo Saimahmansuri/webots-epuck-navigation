@@ -183,10 +183,10 @@ elif command == "slow_forward":
 
 ## Performance Tips
 
-1. **Reduce communication frequency** for better performance
-2. **Increase command timeout** for slower systems
-3. **Use relative positions** for better synchronization
-4. **Add error recovery** for robust operation
+1. **Reduce communication frequency** - for better performance
+2. **Increase command timeout** - for slower systems
+3. **Use relative positions** - for better synchronization
+4. **Add error recovery** - for robust operation
 
 ---
 
@@ -196,6 +196,6 @@ elif command == "slow_forward":
 **Saimah Mansuri**  
 MSc Artificial Intelligence, Sheffield Hallam University  
 🌐 [LinkedIn] https://www.linkedin.com/in/saimah-mansuri-2a7bab200
-📧 Saimahuk141@gmail.com
+📧 Saimahmansuri67@gmail.com
 
 **Ready to test?** Set `DESTINATION = 2` in the leader robot and watch both robots navigate to the living room via the waypoint system! 🚀 
