@@ -181,6 +181,11 @@ elif command == "slow_forward":
     status = f"🐌 Moving slowly forward (speed: {speed_modifier:.2f})"
 ```
 
+## Demo Video
+[![Navigation Demo](https://img.youtube.com/vi/yT89zLRaN-I/0.jpg)](https://youtu.be/yT89zLRaN-I?si=PR9uffRcnqbcbhlU)
+
+*Click the image above to watch the robot navigate to its target destination*
+
 ## Performance Tips
 
 1. **Reduce communication frequency** - for better performance
